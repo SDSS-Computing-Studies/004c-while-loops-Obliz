@@ -15,3 +15,10 @@ outputs:
 Access granted
 Access denied
 """
+name = ""
+while name = "admin"
+  name = input("What is your username?")
+  if name = "admin":
+       print("Whats your password?")
+
+
