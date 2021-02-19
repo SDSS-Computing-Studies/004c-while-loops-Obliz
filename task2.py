@@ -21,7 +21,8 @@ password = ""
 username = input("What is your username?")
 password = input("What is your password?" )
 if username == "admin":
- print("What is your passsword")
-
- if password == "12345"
- print("Access granted")
+ print("What is your password")
+ if password == "12345" :
+  print("Access granted")
+if password != "12345" :
+    print ("Access Denied")
