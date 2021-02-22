@@ -13,3 +13,15 @@ after the number in the sequence is greater than 100:
 Example:
 1 1 2 3 5 ...
 """
+guess = 1
+count = 1
+count2 = guess + count
+
+nextnum = prevnum + count2
+targetNum =100
+
+print("The target is " + str(targetNum))
+print("===================")
+while targetNum + 4 != guess:
+    print(nextnum)
+    nextnum = prevnum + count2

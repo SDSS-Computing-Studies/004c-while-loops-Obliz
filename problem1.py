@@ -17,3 +17,17 @@ outputs:
 Access granted
 Access denied
 """
+username = ""
+password = ""
+
+username = input("What is your username?")
+password = input("What is your password?" )
+if username == "admin":
+ print("What is your password")
+ if password == "12345" :
+  print("Access granted")
+if password != "12345" :
+    print ("Access Denied")
+
+if password != ("12345"):
+    print ("you are locked out, Good Bye.")
