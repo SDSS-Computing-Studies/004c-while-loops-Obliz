@@ -7,21 +7,15 @@ eventually lose all your money.
 It follows a pattern where the last two number are added 
 together to make the next number, starting with 1 1:
 Create a program to show the Fibonacci sequence, stopping
-after the number in the sequence is greater than 100:
+after the number in the sequence is greater than :
 (2 points) 
 
 Example:
 1 1 2 3 5 ...
 """
-guess = 1
-count = 1
-count2 = guess + count
+a=1
+b=1
+output=""
+while b<100
+c=a+b
 
-nextnum = prevnum + count2
-targetNum =100
-
-print("The target is " + str(targetNum))
-print("===================")
-while targetNum + 4 != guess:
-    print(nextnum)
-    nextnum = prevnum + count2

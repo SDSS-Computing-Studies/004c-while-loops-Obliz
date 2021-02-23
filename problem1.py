@@ -17,17 +17,20 @@ outputs:
 Access granted
 Access denied
 """
+count=0
 username = ""
 password = ""
+while count !=3:
 
-username = input("What is your username?")
-password = input("What is your password?" )
-if username == "admin":
- print("What is your password")
- if password == "12345" :
-  print("Access granted")
-if password != "12345" :
-    print ("Access Denied")
+    username = input("What is your username?")
+    password = input("What is your password?" )
+    if username == "admin":
+        print("What is your password")
+    if password == "12345" :
+        print("Access granted")
+    if password != "12345" :
+        count=count+1
+        print ("Access Denied")
 
-if password != ("12345"):
-    print ("you are locked out, Good Bye.")
+    if count == 3:
+        print ("you are locked out, Good Bye.")
