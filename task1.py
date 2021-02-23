@@ -19,7 +19,7 @@ import random
 import math
 import time
 
-targetNum = 20
+targetNum = 100000000000000000000000000000000
 guess = 2
 count = 2
 
