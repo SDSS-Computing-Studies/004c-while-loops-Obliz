@@ -15,19 +15,14 @@ example:
 Enter a number: 4
 4 8 12 16 20 24 28 32 36 40 44 48
 """
-import random
 import math
 import time
 
-targetNum = ""
-guess = 4
-count = 4
-targetNum = input("What is your target Number?") 
-targetNum = int(targetNum)
+count = int(input("Enter a number"))
+first = count
+while True:
+    print(count, end=" ", flush = True)
+    count = first + count
 
-print("The target is " + str(targetNum))
-print("===================")
-while targetNum + 4 != guess:
-    print(guess)
-    guess = (guess + 4)
-    count = count + 4
+    if  count > first * 12:
+      break

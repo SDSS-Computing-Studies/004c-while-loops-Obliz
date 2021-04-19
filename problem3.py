@@ -13,9 +13,15 @@ after the number in the sequence is greater than :
 Example:
 1 1 2 3 5 ...
 """
-a=1
-b=1
-output=""
-while b<100
-c=a+b
+a = 0
+b = 1
+print("1", end=" ", flush = True)
+x = a + b
 
+while x < 100:
+    x = a + b
+    a = b
+    b = x
+    print(x, end=" ", flush = True)
+    if x > 100:
+      break

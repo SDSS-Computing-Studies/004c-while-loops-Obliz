@@ -15,17 +15,19 @@ Example:
 10
 ...
 """
-import random
 import math
 import time
 
-targetNum = 100000000000000000000000000000000
-guess = 2
+targetNum = 20
 count = 2
 
 print("The target is " + str(targetNum))
 print("===================")
-while targetNum + 2 != guess:
-    print(guess)
-    guess = (guess + 2)
+while targetNum == 20:
+    print(count)
     count = count + 2
+    # time.sleep(x) will pause the program at this point for x seconds where x is a float 
+    time.sleep(0.1)
+    if count > 20:
+        break
+print("===================")
